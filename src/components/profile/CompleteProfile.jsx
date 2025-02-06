@@ -57,14 +57,14 @@ const CompleteProfile = () => {
             ...response.data, // Pre-filling form data
           }));
 
-          if (response.data.profilePicture) {
-            setProfilePic(response.data.profilePicture);
-          }
+          // if (response.data.profilePicture) {
+          //   setProfilePic(response.data.profilePicture);
+          // }
         }
       } catch (error) {
         console.error("Error fetching user profile data:", error);
       } finally {
-        setLoading(false);
+        // setLoading(false);
       }
     };
 
