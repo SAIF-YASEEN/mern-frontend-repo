@@ -1,0 +1,170 @@
+.mern-overview-page-container {
+  width: 100%;
+}
+.sectionsection {
+  height: 100vh !important;
+}
+/* Hero Section */
+.hero-container-with-mern-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+section p {
+  font-size: 25px;
+  word-spacing: 20px;
+}
+.mern-stack-overview-title {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.mern-stack-overview-title:hover {
+  color: #000;
+}
+
+.mern-stack-intro-paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.mern-stack-technology-logos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.technology-logo-container {
+  border-radius: 50%;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology-logo-container:hover {
+  transform: scale(1.1);
+}
+
+/* Section Styling */
+.technology-description-section {
+  background-color: #f4f4f4;
+  margin: 3rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.technology-description-section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.technology-description-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.technology-description-section li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+  padding-left: 20px;
+}
+
+.technology-description-section li::before {
+  content: "•";
+  color: #333;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Why Choose MERN Section */
+.why-choose-mern-technology-section {
+  background-color: #f4f4f4;
+  margin: 3rem 0;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+.why-choose-mern-technology-section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.why-choose-mern-technology-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateReact {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .mern-stack-technology-logos-container {
+    flex-direction: column;
+  }
+
+  .technology-logo-container {
+    margin-bottom: 2rem;
+  }
+
+  .mern-stack-intro-paragraph {
+    font-size: 1rem;
+  }
+
+  .mern-stack-overview-title {
+    font-size: 2rem;
+  }
+}
+.mern-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 300px;
+}
+
+.mern-icon {
+  text-align: center;
+}
+
+.mern-icon p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}

@@ -1,0 +1,103 @@
+.mern-advantages {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 12px;
+  margin-top: 50px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.mern-advantages h3 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mern-services,
+.mern-comparison,
+.mern-benefits,
+.mern-popularity,
+.example-projects {
+  margin-bottom: 3rem;
+}
+
+.mern-services h4,
+.mern-comparison h4,
+.mern-benefits h4,
+.mern-popularity h4,
+.example-projects h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mern-services ul,
+.mern-benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mern-services li,
+.mern-benefits li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.mern-services li svg,
+.mern-benefits li svg {
+  margin-right: 0.75rem;
+}
+
+.mern-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.mern-comparison th,
+.mern-comparison td {
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.mern-advantages table th {
+  background-color: #444;
+  color: #fff;
+}
+
+.mern-advantages table tr:nth-child(even) {
+  background-color: #555;
+  color: #fff;
+}
+
+.mern-popularity,
+.example-projects {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 3rem;
+  color: #fff;
+}
+
+.mern-popularity p,
+.example-projects p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.example-projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.example-projects li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 8px;
+}

@@ -1,0 +1,192 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Main Page Container */
+.register-page {
+  display: flex;
+  width: 100%;
+  height: 100vh !important;
+}
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: spin 1s infinite linear;
+}
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem; /* Space for the toggle icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+  color: #555;
+  font-size: 1.25rem;
+}
+.hidden{
+  background-color: red;
+  width: 500px;
+  height: 500px;
+}
+
+.generate-password-btn {
+  margin-top: 1rem;
+  width: 40%;
+  background-color: #1e1e1e !important;
+  color: white;
+  padding: 6px 6px ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.generate-password-btn:hover {
+  background-color: #333 !important;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem; /* Space for the icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+  color: #555;
+  font-size: 1.25rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.generate-password-btn {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Left Section */
+.register-left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.register-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.register-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Right Section */
+.register-right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 30px;
+}
+
+.register-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.register-form {
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background: #333;
+}
+
+.already {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 10px;
+}
+.already p {
+  font-size: 15px;
+}
+.already a {
+  font-size: 15px;
+}

@@ -1,0 +1,149 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Main Page Container */
+.login-page {
+  display: flex;
+  width: 100%;
+  height: 100vh !important;
+}
+
+/* Left Section */
+.login-page-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.mern-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.login-page-title {
+  font-size: 43px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.login-page-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 20px;
+}
+
+/* Right Section */
+.login-page-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 30px;
+}
+
+.login-page-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.login-page-form {
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background: #333;
+}
+
+/* Footer Text */
+.login-footer-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-footer-link {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.login-footer-link:hover {
+  text-decoration: underline;
+}
+
+/* React Animation */
+@keyframes rotateReact {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.forgotsignup {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  padding-left: 10px;
+}
+.login-footer-text {
+  font-size: 17px;
+}
+.forgotLink {
+  font-size: 16px;
+}

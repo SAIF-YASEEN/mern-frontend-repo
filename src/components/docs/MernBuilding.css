@@ -1,0 +1,197 @@
+.mern-overview {
+  width: 100%;
+  margin: 5rem auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.heroMERNmern {
+  background-color: #333;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 70px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.mern-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #000000;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.mern-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: #fffbfb;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.mern-intro {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #d1d1d1;
+  line-height: 1.9;
+}
+
+.mern-section {
+  padding: 3rem 3.5rem;
+  margin-bottom: 2rem !important;
+  margin-top: 3rem;
+  box-shadow: 0px 0px 5px 3px rgba(182, 182, 182, 0.6);
+  border-radius: 15px !important;
+  background-color: #333;
+  animation: fadeInLeft 1.4s ease-in-out;
+  transition: background 0.5s ease;
+}
+
+.mongoSec,
+.expressSec,
+.nodeSec {
+  background-color: #333;
+}
+
+.expressSec,
+.nodeSec {
+  background-color: #fff;
+}
+
+.mern-section h3 {
+  font-size: 2.2rem;
+  color: #a6a6a6;
+  margin-bottom: 1.5rem;
+}
+
+.mern-section p {
+  font-size: 1.2rem;
+  color: #807e7e;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.mern-section ul {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.mern-section li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #000000;
+  padding-left: 2rem;
+}
+
+.mern-conclusion {
+  text-align: center;
+  background: linear-gradient(145deg, #2b2b2b, #353535);
+  padding: 2.5rem 3.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.mern-conclusion h3 {
+  font-size: 2.4rem;
+  color: #1e1e1e;
+  margin-bottom: 1.5rem;
+}
+
+.mernmerntimeline ol {
+  list-style-type: decimal;
+  margin-left: 3rem;
+}
+
+.mern-conclusion p {
+  font-size: 1.2rem;
+  color: #d1d1d1;
+}
+
+.mern-featured-libraries,
+.mern-performance-enhancements {
+  background-color: #292929;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mern-title {
+    font-size: 3rem;
+  }
+
+  .mern-section h3 {
+    font-size: 2rem;
+  }
+
+  .mern-intro,
+  .mern-section p,
+  .mern-conclusion p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mern-title {
+    font-size: 2.5rem;
+  }
+
+  .mern-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .mern-intro,
+  .mern-section p,
+  .mern-conclusion p {
+    font-size: 1rem;
+  }
+}

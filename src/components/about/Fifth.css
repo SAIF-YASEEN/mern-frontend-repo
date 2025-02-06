@@ -1,0 +1,54 @@
+/* FitfthAboutComponent styling */
+
+/* Elephant Tech History Section */
+.elephant-tech-history {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.elephant-tech-history h2 {
+  font-size: 2.2rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.whale-tech-histories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.whale-tech-histories div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 450px) {
+  .whale-tech-histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.whale-tech-histories h3 {
+  font-size: 1.5rem;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.whale-tech-histories p {
+  font-size: 1rem;
+  color: #555;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}

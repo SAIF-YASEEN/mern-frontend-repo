@@ -1,0 +1,128 @@
+/* src/styles/MoreMernKnowledge.css */
+.more-mern-knowledge {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  text-align: center;
+  min-height:fit-content;
+}
+
+.more-mern-knowledge h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.M {
+  background-color: #6cb56d !important;
+  margin-top: 50px !important;
+}
+.E {
+  background-color: #333333 !important;
+  margin-top: 50px !important;
+}
+.R {
+  background-color: #81e1fc !important;
+  margin-top: 50px !important;
+}
+.N {
+  background-color: #86b382 !important;
+  margin-top: 50px !important;
+ 
+}
+
+.more-mern-knowledge p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.mern-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mern-link {
+  padding: 25px;
+  border-radius: 8px;
+  width: 22%;
+  text-align: left;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.mern-link h3 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.mern-link a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.mern-link a:hover {
+  text-decoration: underline;
+}
+
+.mern-link p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.mern-link:hover {
+  transform: translateY(-5px);
+}
+
+.mern-link.mongo {
+  background-color: rgba(71, 162, 72, 0.8); /* Light MongoDB color */
+  min-width: 300px;
+}
+
+.mern-link.express {
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.8); /* Light Express color */
+}
+
+.mern-link.react {
+  min-width: 300px;
+  background-color: rgba(97, 218, 251, 0.8); /* Light React color */
+}
+
+.mern-link.node {
+  min-width: 300px;
+  background-color: rgba(104, 160, 99, 0.8); /* Light Node.js color */
+}
+
+.mern-link .logo-letter {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+/* Add the following in your MoreMernKnowledge.css */
+.mern-link {
+  opacity: 0;
+  transform: translateY(100px); /* Start below the screen */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.mern-link[data-aos="fade-up"] {
+  opacity: 1;
+  transform: translateY(0);
+}

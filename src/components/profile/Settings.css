@@ -1,0 +1,183 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white !important;
+  padding: 20px;
+  border-radius: 10px !important;
+  text-align: center;
+  width: 600px !important;
+  height: 250px !important;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.modal-buttons {
+  display: flex !important;
+  gap: 100px;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.modal-message {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal-cancel-button {
+  background: #fd312a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-cancel-button:hover {
+  background: #c9302c;
+}
+
+.modal-proceed-button {
+  background-color: #1ad21a !important;
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-proceed-button:hover {
+  background: #11ff11 !important;
+}
+
+.displayNone {
+  display: none;
+}
+
+.action-button {
+  background-color: #333;
+  color: white !important;
+  border: 4px !important;
+  display: flex !important;
+  gap: 15px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.action-button:hover {
+  background-color: #333;
+  color: white !important;
+}
+
+.btnsFunctions {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+  flex-direction: column;
+  width: 15%;
+}
+
+.btnUpdateUserName {
+  margin-bottom: 50px;
+}
+.user-timestamps {
+  background: linear-gradient(to right, #ffffff, #f8f8f8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 60px;
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 6px;
+  gap: 15px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out, box-shadow 0.3s;
+}
+
+.user-timestamps:hover {
+  height: 320px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timestamps-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timestamp-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.icon {
+  color: #333;
+}
+
+.timestamps-details {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time-difference {
+  font-size: 14px;
+  font-weight: 600;
+  color: #484848c1;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.time-grid div {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.toastSettingUserName {
+  width: 0px;
+  height: 0px;
+  padding: 20px;
+}

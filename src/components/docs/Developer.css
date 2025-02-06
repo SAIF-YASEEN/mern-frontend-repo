@@ -1,0 +1,186 @@
+.developer-about {
+  background: #ffffff;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container-saiftry {
+  width: 100% !important;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.mern-title-lt {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mern-intro-lt {
+  font-size: 1.2rem;
+  max-width: 800px;
+  color: #333;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.about-section {
+  background: #fff;
+  box-shadow: 1px 1px 3px 3px rgb(237, 237, 237);
+  padding: 20px;
+  border-radius: 12px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+}
+
+.about-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #272727;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  padding: 5px 0;
+}
+
+.mern-section-title {
+  font-size: 1.8rem;
+  margin-top: 50px;
+  color: #525252;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px !important;
+  background: #7c7c7c !important;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.social-links a svg {
+  color: black !important; /* Default color */
+}
+
+.social-links a:hover svg {
+  color: #3498db !important; /* Hover effect */
+}
+
+.social-links a:nth-child(1) svg {
+  color: #333 !important; /* GitHub color */
+}
+
+.social-links a:nth-child(2) svg {
+  color: #0a66c2 !important; /* LinkedIn color */
+}
+
+.social-links a:nth-child(3) svg {
+  color: #e74c3c !important; /* Envelope color */
+}
+
+.social-links a:nth-child(4) svg {
+  color: #1da1f2 !important; /* Twitter color */
+}
+
+.social-links a:nth-child(5) svg {
+  color: #e4405f !important; /* Instagram color */
+}
+
+.social-links a:nth-child(6) svg {
+  color: #1877f2 !important; /* Facebook color */
+}
+
+.social-links a:nth-child(7) svg {
+  color: #ff0000 !important; /* YouTube color */
+}
+
+.social-links a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mern-title {
+    font-size: 2rem;
+  }
+
+  .mern-intro {
+    font-size: 1.1rem;
+  }
+}
+.email-popup {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: 50px;
+  background-color: white;
+  box-shadow: 1px 1px 2px 3px rgb(249, 249, 249);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.email-popup p {
+  margin: 0;
+  color: black;
+  font-size: 16px;
+}
+
+.email-popup button {
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}

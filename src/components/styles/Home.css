@@ -1,0 +1,324 @@
+/* Reset styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+section{
+  min-height: fit-content;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+.upercasep {
+  text-transform: uppercase;
+  margin-bottom: 350px !important;
+  color: grey !important;
+  margin-top: 50px;
+}
+
+.hero {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.mern-logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 100px;
+}
+
+/* Define the pulsing effect */
+@keyframes pulseNode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateReact {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-container {
+  text-align: center;
+  margin: 0 20px;
+}
+@media (max-width: 1300px) {
+  /* Stack icons and text vertically */
+  .logo-container .iconResp {
+    width: 120px !important;
+  }
+}
+@media (max-width: 1030px) {
+  /* Stack icons and text vertically */
+  .logo-container .iconResp {
+    width: 70px !important;
+  }
+  .mern-logos {
+    gap: 50px;
+  }
+  @media (max-width: 800px) {
+    /* Stack icons and text vertically */
+    .logo-container .iconResp {
+      width: 40px !important;
+    }
+    .mern-logos {
+      gap: 20px;
+    }
+  }
+  @media (max-width: 680px) {
+    /* Stack icons and text vertically */
+    .logo-container .iconResp {
+      width: 60px !important;
+    }
+    .mern-logos {
+      gap: 10px;
+    }
+    .mern-logos h3{
+      display: none;
+    }
+  }
+  @media (max-width: 490px) {
+    /* Stack icons and text vertically */
+    .logo-container .iconResp {
+      width: 50px !important;
+    }
+    .mern-logos {
+      gap: 0px;
+    }
+  }
+  @media (max-width: 450px) {
+    /* Stack icons and text vertically */
+    .logo-container .iconResp {
+      width: 60px !important;
+      margin-left: -20px;
+
+    }
+    .mern-logos {
+      gap: -10px;
+    }
+    .h1res400{
+      word-spacing: 60px;
+    }
+  }
+}
+.logo-container h3 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.mern-logos .logo-container svg {
+  transition: transform 0.3s ease;
+}
+.reactIcon {
+  transition: transform 0.3s ease-in-out; /* Smooth scale transition */
+  transform-origin: center; /* Ensure scaling happens around the center */
+}
+.reactIcon {
+  size: 100%;
+}
+/* When hovering over the React icon */
+.reactIcon:hover {
+  transform: scale(1.2); /* Scale up smoothly on hover */
+}
+.mern-logos .logo-container:hover svg {
+  transform: scale(1.2);
+}
+
+.mern-stack,
+.react-node {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.stack-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stack-content:hover {
+  transform: translateY(-10px);
+}
+
+.icon-container h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.react-node {
+  background-color: #eef2f3;
+}
+
+.long-content {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.long-content p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* Animation Styles */
+[data-aos="fade-right"],
+[data-aos="fade-left"],
+[data-aos="fade-up"],
+[data-aos="zoom-in"] {
+  opacity: 0;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .mern-stack,
+  .react-node {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stack-content {
+    margin-bottom: 30px;
+  }
+
+  .mern-logos {
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* Styling for each stack section */
+.mern-stack,
+.react-node {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.stack-content {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.stack-content:hover {
+  transform: translateY(-10px);
+}
+
+/* Styling for Icon containers */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Style for the Icons */
+.icon-container svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container:hover svg {
+  transform: scale(1.1);
+}
+
+/* Title styling */
+.stack-content h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* List styles */
+.stack-content ul {
+  padding-left: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.stack-content ul li {
+  margin: 10px 0;
+}
+
+/* Section with long description */
+.long-content {
+  text-align: justify;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+/* Styling for heading in long content */
+.long-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .stack-content {
+    width: 100%;
+  }
+  .long-content {
+    width: 95%;
+  }
+}
+/* src/styles/MoreMernKnowledge.css */

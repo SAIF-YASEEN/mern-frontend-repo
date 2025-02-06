@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+.mainmain{
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  background-color: red;
+}
+.mern-logos{
+display: flex;
+width: 850px !important;
+justify-content: center;
+align-items: center;
+}
+/* Main Container */
+.norway-section {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.france-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sweden-logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.canada-logo,
+.germany-logo,
+.japan-logo,
+.brazil-logo {
+  font-size: 18px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.australia-arrow {
+  margin-top: 30px;
+}
+
+.italy-merncolors span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.spain-m {
+  color: #61DAFB;
+}
+
+.portugal-e {
+  color: #000;
+}
+
+.china-r {
+  color: #68A063;
+}
+
+.russia-n {
+  color: #47A248;
+}
+
+/* Form Section */
+.india-form-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  width: 50%;
+  height: 100vh;
+}
+
+.mexico-container {
+  text-align: center;
+}
+
+.uk-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.argentina-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.egypt-form {
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.china-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 400px;
+}
+
+.turkey-label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.ghana-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.ghana-input:focus {
+  outline-color: #61DAFB;
+}
+
+.kenya-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.kenya-btn:hover {
+  background-color: #399c39;
+}
+
+.kenya-btn:active {
+  background-color: #2c7f2c;
+}
+
+/* Add minor hover effects */
+.ghana-input:hover {
+  border-color: #47A248;
+}

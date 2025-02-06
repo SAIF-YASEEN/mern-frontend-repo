@@ -1,0 +1,259 @@
+
+
+.profile-page {
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.profile-page.dark {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+/* Sidebar */
+.profile-sidebar {
+  width: 20%;
+  background-color: #333;
+  padding: 30px;
+}
+
+.profile-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.profile-sidebar li {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #bbb;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-sidebar li.active,
+.profile-sidebar li:hover {
+  background-color: #747474;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* .profile-sidebar li.active:before {
+  content: "✔";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
+} */
+
+/* Main Content Area */
+.profile-content {
+  margin-left: 50px;
+  padding: 30px;
+  width: 100%;
+  transition: padding 0.3s ease;
+  height: 100vh;
+  padding-top: 100px;
+  gap: 30px;
+}
+
+/* Ensure every section in the profile-content area is same height */
+.profile-content > div {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.profile-content h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+/* Profile Section */
+.profile-section .profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 24px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-details h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-details p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Other sections (Bio, Personal Details) */
+.profile-bio,
+.profile-personal-details {
+  margin-top: 20px;
+}
+
+.profile-bio h3,
+.profile-personal-details h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+.profile-bio p,
+.profile-personal-details p {
+  font-size: 16px;
+  color: #666;
+}
+
+.profile-bio textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  resize: none;
+}
+
+.profile-bio textarea:focus {
+  outline-color: #61dafb;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1d4;
+}
+
+.theme-toggle button {
+  padding: 12px 24px;
+  background-color: #61dafb;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle button:hover {
+  background-color: #21a1d4;
+}
+.complete-profile-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 10px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.complete-profile-section input,
+.complete-profile-section textarea {
+  font-size: 14px;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.complete-profile-section button {
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.complete-profile-section button:disabled {
+  background-color: #ccc;
+}
+
+.complete-profile-section input[type="text"] {
+  width: calc(100% - 16px); /* Adjust width to avoid being too wide */
+}
+
+.complete-profile-section .input-container {
+  width: 100%;
+}
+
+.complete-profile-section .label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.complete-profile-section input:disabled,
+.complete-profile-section textarea:disabled {
+  background-color: #f4f4f4;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .complete-profile-section {
+    grid-template-columns: 1fr; /* Stack inputs on small screens */
+  }
+}
+/* Ensure the complete-profile-section is scrollable when needed */
+.complete-profile-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 100%;
+  padding: 20px;
+  height: 70vh; /* Adjust height of section */
+  overflow-y: auto; /* Allow vertical scrolling */
+  scrollbar-width: thin; /* Makes scrollbar smaller */
+}
+
+@media screen and (max-width: 600px) {
+  .complete-profile-section {
+    grid-template-columns: 1fr; /* Stack inputs on small screens */
+    height: auto; /* Auto height on smaller screens */
+  }
+}

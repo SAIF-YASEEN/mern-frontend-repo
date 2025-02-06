@@ -1,0 +1,60 @@
+/* Fourth.css */
+.furniture-install {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.furniture-install h2 {
+  font-size: 2rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.furniture-install p {
+  font-size: 1.1rem;
+  color: #666;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.furniture-install ol {
+  list-style-position: inside;
+  font-size: 1rem;
+  color: #555;
+}
+
+.furniture-install li {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.furniture-install strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.furniture-install a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.furniture-install a:hover {
+  text-decoration: underline;
+}
+
+.furniture-install pre {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  overflow-x: auto;
+}
+
+.furniture-install code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1rem;
+}

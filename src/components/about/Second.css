@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+    font-size: 1.2rem; /* Larger font size for readability */
+  }
+  .giraffe-history{
+background-color: #f4f4f4;
+  }
+  /* Styling for sections */
+  .mern-stack, .react-node {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  /* Individual Stack Content */
+  .stack-content {
+    background-color: #f4f4f4;  /* Light grey background for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    width: 45%;  /* Ensuring elements do not take up the whole screen on large devices */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for stack content */
+  .stack-content:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+  }
+  
+  .icon-container h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .stack-content p {
+    font-size: 1.2rem;  /* Larger text size */
+    color: #666;
+  }
+  
+  .stack-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  
+  .stack-content ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #444;
+  }
+  
+  .stack-content ul li strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Icon size for smaller devices */
+  .icon-container svg {
+    margin: 0 auto;
+  }
+  
+  /* Media Query for small devices */
+  @media (max-width: 768px) {
+    .stack-content {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .stack-content h2 {
+      font-size: 1.3rem;
+    }
+  
+    .stack-content p,
+    .stack-content ul li {
+      font-size: 1.1rem; /* Adjust font size for mobile */
+    }
+  }
+  

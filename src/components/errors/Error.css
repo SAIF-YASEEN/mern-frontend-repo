@@ -1,0 +1,102 @@
+/* Basic reset for full-screen styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+  width: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+
+.error-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff6347; /* Tomato red - Modern bold look */
+  margin-bottom: 30px;
+}
+
+.error-body {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #666; /* Subtle color for the body */
+}
+
+.error-solution {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #444; /* Slightly darker gray for the solution */
+}
+
+.error-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-btn:hover {
+  background-color: #555;
+}
+
+/* Flexbox for logos positioned at the center bottom */
+.mern-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%; /* Positioned near the bottom of the screen */
+  width: 100%;
+}
+
+/* MongoDB logo (Nike color) */
+.nike-logo {
+  font-size: 60px;
+  color: #47a248; /* Nike's black */
+  margin: 0 20px;
+}
+
+
+/* Express logo (Adidas color) */
+.adidas-logo {
+  font-size: 60px;
+  color: #000; /* Adidas' blue */
+  margin: 0 20px;
+}
+
+
+
+/* React logo (Puma color) */
+.puma-logo {
+  font-size: 60px;
+  color: #008bb2; /* Puma's yellow */
+  margin: 0 20px;
+}
+
+/* Node.js logo (Under Armour color) */
+.underarmour-logo {
+  font-size: 60px;
+  color: #68a063; /* Under Armour's red */
+  margin: 0 20px;
+}
+
+

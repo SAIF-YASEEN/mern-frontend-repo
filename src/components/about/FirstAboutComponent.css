@@ -1,0 +1,59 @@
+.mern-logos {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+}
+
+.ps {
+  margin-top: 100px !important;
+  line-height: 50px;
+}
+
+.elephant-intro {
+  background-color: #333333 !important;
+  color: white;
+  height: 100vh !important;
+
+}
+.mern{
+  text-transform: uppercase;
+  text-align: center;
+  color: grey;
+}
+
+.elephant-intro h1 {
+  font-size: 35px;
+  margin-bottom: 400px;
+}
+.mernoutro {
+  font-size: 20px;
+  color: rgb(166, 166, 166);
+  text-transform: uppercase;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pfontbig {
+  font-size: 25px;
+}
+.reactIcon {
+  animation: rotateReact 15s linear infinite;
+}
+
+/* Keyframe animation for rotating React logo */
+@keyframes rotateReact {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
