@@ -9,7 +9,7 @@ import CompleteProfile from "../profile/CompleteProfile";
 const ProfilePage = () => {
   const [activeSection, setActiveSection] = useState("profile");
   const [profileImage, setProfileImage] = useState(DefaultUser);
-  // const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -42,7 +42,7 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className={`profile-page ${darkMode ? "dark" : ""}`}>
+    <div className="profile-page ">
       {/* Sidebar Navigation */}
       <div className="profile-sidebar">
         <h3>Navigation</h3>
