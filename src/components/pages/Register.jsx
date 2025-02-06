@@ -9,7 +9,9 @@ function RegisterPage() {
   const handleUserRegistration = (formData) => {
     setUserRegisteredData(formData);
     console.log("User Registered Data:", formData); // For testing
-    alert("User registered successfully!");
+    alert("User registered successfully!",);
+    console.log(userRegisteredData);
+    
   };
 
   return (
