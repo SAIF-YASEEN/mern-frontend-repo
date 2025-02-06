@@ -53,8 +53,6 @@ const ProfilePage = () => {
           >
             Profile
           </li>
-         
-         
 
           <li
             className={activeSection === "completeProfile" ? "active" : ""}
@@ -79,7 +77,7 @@ const ProfilePage = () => {
             handleImageChange={handleImageChange}
           />
         )}
-     
+
         {activeSection === "completeProfile" && (
           <CompleteProfile
             formData={formData}
