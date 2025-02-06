@@ -17,8 +17,6 @@ import {
 import "./CompleteProfile.css";
 
 const CompleteProfile = () => {
-  const [loading, setLoading] = useState(true);
-  const [profilePic, setProfilePic] = useState("");
   const [formData, setFormData] = useState({
     username: "",
     email: "",

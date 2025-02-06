@@ -4,7 +4,6 @@ import RegisterRightSide from "../register/RegisterRightSide";
 import "../styles/Register.css";
 
 function RegisterPage() {
-  const [userRegisteredData, setUserRegisteredData] = useState({});
 
   const handleUserRegistration = (formData) => {
     setUserRegisteredData(formData);

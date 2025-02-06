@@ -5,7 +5,6 @@ import { GrHomeRounded } from "react-icons/gr";
 import {
   FaRegUser,
   FaChartBar,
-  FaInfoCircle,
   FaCube ,  FaTools,
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";

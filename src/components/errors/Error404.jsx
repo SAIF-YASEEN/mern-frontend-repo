@@ -4,7 +4,6 @@ import { SiExpress } from "react-icons/si"; // Express Logo
 import { FaDatabase } from "react-icons/fa"; // MongoDB Logo
 import "./Error.css";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 function ErrorPage() {
   const location = useLocation();
   

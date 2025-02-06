@@ -1,8 +1,6 @@
 import { DiJavascript } from "react-icons/di";
-import { FaBroadcastTower, FaSyncAlt, FaExpandArrowsAlt, FaProjectDiagram } from 'react-icons/fa';
+import { FaBroadcastTower, FaExpandArrowsAlt } from "react-icons/fa";
 import "./Sixth.css";
-
-
 
 const SixthAboutComponent = () => {
   return (

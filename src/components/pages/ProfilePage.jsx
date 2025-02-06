@@ -41,8 +41,6 @@ const ProfilePage = () => {
     }, 1000);
   };
 
-  const toggleTheme = () => setDarkMode((prev) => !prev);
-
   return (
     <div className={`profile-page ${darkMode ? "dark" : ""}`}>
       {/* Sidebar Navigation */}

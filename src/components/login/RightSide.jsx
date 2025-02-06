@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify"; // Toastify for notifications
 import "react-toastify/dist/ReactToastify.css";
-import BASE_URL from "../../configs/backendurl";
 const Login = () => {
-  const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",

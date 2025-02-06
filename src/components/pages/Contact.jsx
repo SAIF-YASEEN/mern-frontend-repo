@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../styles/Contact.css";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import { FaArrowRight } from "react-icons/fa6";
 import BASE_URL from "../../configs/backendurl";
 
 const ContactPage = () => {
