@@ -42,7 +42,7 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="profile-page ">
+    <div className="profile-page">
       {/* Sidebar Navigation */}
       <div className="profile-sidebar">
         <h3>Navigation</h3>
