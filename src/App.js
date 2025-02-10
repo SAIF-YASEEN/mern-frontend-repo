@@ -13,7 +13,9 @@ import Ofline from "./components/errors/Ofline.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isOffline, setIsOffline] = useState(!navigator.onLine); // Track online/offline status
+  const [isOffline, setIsOffline] = useState(!navigator.onLine);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [showInstallPopup, setShowInstallPopup] = useState(false);
 
   // Handle internet connection changes
   useEffect(() => {
@@ -27,31 +29,83 @@ function App() {
       window.removeEventListener("online", handleOnline);
       window.removeEventListener("offline", handleOffline);
     };
-  }, []); // Only runs once when the component is mounted
+  }, []);
 
-  // Display loading screen for 3 seconds
+  // Display loading screen for 2.5 seconds
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 2500);
-    return () => clearTimeout(timer); // Cleanup timer on unmount
-  }, []); // Only runs once when the component is mounted
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Capture PWA install event and show custom popup
+  useEffect(() => {
+    const beforeInstallPromptHandler = (event) => {
+      event.preventDefault();
+      setDeferredPrompt(event);
+      setShowInstallPopup(true);
+    };
+
+    window.addEventListener("beforeinstallprompt", beforeInstallPromptHandler);
+
+    return () => {
+      window.removeEventListener(
+        "beforeinstallprompt",
+        beforeInstallPromptHandler
+      );
+    };
+  }, []);
+
+  const handleInstall = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt(); // Show install prompt
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("User accepted PWA install");
+        } else {
+          console.log("User dismissed PWA install");
+        }
+        setDeferredPrompt(null);
+        setShowInstallPopup(false);
+      });
+    }
+  };
 
   return (
     <AuthProvider>
       <div className="App">
         {isLoading ? (
-          <LogoDisplay /> // Loading screen
+          <LogoDisplay />
         ) : isOffline ? (
-          <Ofline /> // Show offline page if user is offline
+          <Ofline />
         ) : (
-          // All routes inside the Router only if online
-          <Router>
-            <Routes>
-              <Route element={<HeaderLayout />}>{HeaderLayoutRouter()}</Route>
-              <Route element={<NoHeaderLayout />}>
-                <Route path="*" element={<Error404 />} />
-              </Route>
-            </Routes>
-          </Router>
+          <>
+            {showInstallPopup && (
+              <div className="custom-install-popup">
+                <div className="popup-content">
+                  <h2>Install Our App 🚀</h2>
+                  <p>Get the best experience by installing our PWA!</p>
+                  <button className="install-btn" onClick={handleInstall}>
+                    Install Now
+                  </button>
+                  <button
+                    className="cancel-btn"
+                    onClick={() => setShowInstallPopup(false)}
+                  >
+                    Maybe Later
+                  </button>
+                </div>
+              </div>
+            )}
+
+            <Router>
+              <Routes>
+                <Route element={<HeaderLayout />}>{HeaderLayoutRouter()}</Route>
+                <Route element={<NoHeaderLayout />}>
+                  <Route path="*" element={<Error404 />} />
+                </Route>
+              </Routes>
+            </Router>
+          </>
         )}
       </div>
     </AuthProvider>
