@@ -2,11 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { GrHomeRounded } from "react-icons/gr";
-import {
-  FaRegUser,
-  FaChartBar,
-  FaCube ,  FaTools,
-} from "react-icons/fa";
+import { FaRegUser, FaChartBar, FaCube, FaTools } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
 import { SiMongodb, SiExpress } from "react-icons/si";
@@ -116,7 +112,7 @@ const Header = () => {
                       location.pathname === "/docs/building" ? "active" : ""
                     }`}
                   >
-                    <FaCube  size={30} />{" "}
+                    <FaCube size={30} />{" "}
                     <span className="Spansss">Building</span>
                   </Link>
                 </li>
