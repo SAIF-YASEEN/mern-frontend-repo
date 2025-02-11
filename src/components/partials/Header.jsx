@@ -62,7 +62,7 @@ const Header = () => {
                 location.pathname === "/" ? "active" : ""
               }`}
             >
-              <GrHomeRounded size={25} className="icon" /> Home checks
+              <GrHomeRounded size={25} className="icon" /> Home br
             </Link>
           </li>
           <li>
