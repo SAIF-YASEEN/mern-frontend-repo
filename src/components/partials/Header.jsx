@@ -6,26 +6,28 @@ import { FaRegUser, FaChartBar, FaCube, FaTools } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
 import { SiMongodb, SiExpress } from "react-icons/si";
-import { FaReact, FaNode, FaLaptopCode } from "react-icons/fa";
+import { FaReact, FaNode, FaLaptopCode, FaBars, FaTimes } from "react-icons/fa"; // FaBars for menu, FaTimes for close
+import { FaBookOpen } from "react-icons/fa";
+import { MdPriorityHigh } from "react-icons/md";
 import "./Header.css";
 
 const Header = () => {
   const { isLoggedIn } = useAuth();
   const location = useLocation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Toggle dropdown
   const handleDropdownToggle = () => setDropdownOpen(!dropdownOpen);
+  const handleMobileMenuToggle = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  // Handle when a Docs item is clicked
   const handleDocsItemClick = () => {
     setDropdownOpen(false);
-    document.body.style.backgroundColor = "grey"; // Set Docs background
+    setMobileMenuOpen(false);
+    document.body.style.backgroundColor = "grey";
   };
 
   useEffect(() => {
-    // Close dropdown when clicking outside
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownOpen(false);
@@ -49,48 +51,61 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className="nav">
+      {/* Hamburger Menu for Mobile */}
+      <div className="hamburger-menu" onClick={handleMobileMenuToggle}>
+        {mobileMenuOpen ? (
+          <FaTimes size={25} color="white" />
+        ) : (
+          <FaBars size={25} color="white" />
+        )}
+      </div>
+
+      <nav className={`nav ${mobileMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
             <Link
               to="/"
-              className={` nav-link-issue  ${
+              className={`nav-link-issue ${
                 location.pathname === "/" ? "active" : ""
               }`}
             >
-              <GrHomeRounded size={25} className="icon" /> Home
+              <GrHomeRounded size={20} className="iconsaif home-icon" />
+              <span className="spanHome">Home</span>
             </Link>
           </li>
           <li>
             <Link
               to="/about"
-              className={` nav-link-issue  ${
+              className={`nav-link-issue ${
                 location.pathname === "/about" ? "active" : ""
               }`}
             >
-              <FaRegUser size={25} className="icon" /> About
+              <FaRegUser size={20} className="iconsaif" />
+              <span className="spanHome">About</span>
             </Link>
           </li>
           <li>
             <Link
               to="/contact"
-              className={` nav-link-issue  ${
+              className={`nav-link-issue ${
                 location.pathname === "/contact" ? "active" : ""
               }`}
             >
-              <AiOutlineMail size={25} className="icon" /> Contact
+              <AiOutlineMail size={20} className="iconsaif" />
+              <span className="spanHome">Contact</span>
             </Link>
           </li>
 
           {/* Docs Dropdown */}
           <li className="dropdown" ref={dropdownRef}>
             <button
-              className={` nav-link-issue  docs-btn ${
+              className={`nav-link-issue docs-btn ${
                 location.pathname.startsWith("/docs") ? "active" : ""
               }`}
               onClick={handleDropdownToggle}
             >
-              Docs
+              <FaBookOpen size={20} className="iconsaif" />{" "}
+              <span className="spanHome">Docs</span>
             </button>
             {dropdownOpen && (
               <ul className="dropdown-menu">
@@ -112,7 +127,7 @@ const Header = () => {
                       location.pathname === "/docs/building" ? "active" : ""
                     }`}
                   >
-                    <FaCube size={30} />{" "}
+                    <FaCube size={30} />
                     <span className="Spansss">Building</span>
                   </Link>
                 </li>
@@ -123,7 +138,7 @@ const Header = () => {
                       location.pathname === "/docs/services" ? "active" : ""
                     }`}
                   >
-                    <FaTools size={30} />{" "}
+                    <FaTools size={30} />
                     <span className="Spansss">Services</span>
                   </Link>
                 </li>
@@ -134,7 +149,7 @@ const Header = () => {
                       location.pathname === "/docs/developer" ? "active" : ""
                     }`}
                   >
-                    <FaLaptopCode size={30} />{" "}
+                    <FaLaptopCode size={30} />
                     <span className="Spansss">Developer</span>
                   </Link>
                 </li>
@@ -147,22 +162,24 @@ const Header = () => {
             <li>
               <Link
                 to="/register"
-                className={` nav-link-issue  ${
+                className={`nav-link-issue ${
                   location.pathname === "/register" ? "active" : ""
                 }`}
               >
-                <BiLogIn size={25} className="icon" /> Register
+                <BiLogIn size={20} className="iconsaif" />
+                <span className="spanHome">Register</span>
               </Link>
             </li>
           ) : (
             <li>
               <Link
                 to="/profile"
-                className={` nav-link-issue  ${
+                className={`nav-link-issue ${
                   location.pathname === "/profile" ? "active" : ""
                 }`}
               >
-                <FaRegUser size={25} className="icon" /> Profile
+                <FaRegUser size={20} className="iconsaif" />
+                <span className="spanHome">Profile</span>
               </Link>
             </li>
           )}

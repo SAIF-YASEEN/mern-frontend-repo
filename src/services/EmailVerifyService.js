@@ -27,7 +27,6 @@ const checkEmailExistence = async (email, apiKey) => {
         return { valid: false, message: "Undeliverable email" };
       }
     } catch (error) {
-      console.error("Error verifying email:", error);
       return { valid: false, message: "Error validating email" };  // Treat as invalid email if there's an error
     }
   };
