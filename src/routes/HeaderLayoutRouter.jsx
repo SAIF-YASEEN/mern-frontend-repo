@@ -14,6 +14,8 @@ import MernServices from "../components/docs/MernServices";
 import Developer from "../components/docs/developer";
 import Test from "../tests/text";
 import VerifyOtp from "../components/pages/VerifyOTP";
+import UpcomingPage from "../components/pages/Upcoming";
+import Chat from "../components/pages/chat"
 const HeaderLayoutRouter = () => {
   return (
     <>
@@ -31,6 +33,8 @@ const HeaderLayoutRouter = () => {
       <Route path="/docs/building" element={<MernBuilding />} />
       <Route path="/docs/services" element={<MernServices />} />
       <Route path="/docs/developer" element={<Developer />} />
+      <Route path="/upcomingfeautures" element={<UpcomingPage />} />
+      <Route path="/chat" element={<Chat />} />
     </>
   );
 };
