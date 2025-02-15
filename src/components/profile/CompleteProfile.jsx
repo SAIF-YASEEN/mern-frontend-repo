@@ -106,6 +106,8 @@ const CompleteProfile = () => {
       setIsSubmitting(false);
     }
   };
+  const userEmail = JSON.parse(localStorage.getItem("userEmail"));
+  console.log("userEmail by console 110", userEmail);
 
   return (
     <div className="complete-profile-section">
@@ -130,8 +132,8 @@ const CompleteProfile = () => {
               id="email"
               name="email"
               className="input-field"
-              value={formData.email}
-              readOnly
+              value={userEmail}
+              onChange={handleInputChange}
             />
           </div>
         </div>
