@@ -5,6 +5,7 @@ export const FirstHomeComponent = () => {
   return (
     <section className="hero" data-aos="fade-up">
       <h1 className="h1res400">WELCOME TO MERN</h1>
+   
       <p className="upercasep">
         Build full-stack web apps using MongoDB, Express, React, and Node.js
       </p>

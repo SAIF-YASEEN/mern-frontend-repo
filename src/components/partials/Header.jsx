@@ -8,7 +8,7 @@ import { BiLogIn } from "react-icons/bi";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { FaReact, FaNode, FaLaptopCode, FaBars, FaTimes } from "react-icons/fa"; // FaBars for menu, FaTimes for close
 import { FaBookOpen } from "react-icons/fa";
-import { MdPriorityHigh } from "react-icons/md";
+import { FaClock, FaHourglassHalf, FaRocket } from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => {
@@ -183,6 +183,17 @@ const Header = () => {
               </Link>
             </li>
           )}
+          <li>
+            <Link
+              to="/upcomingfeautures"
+              className={`nav-link-issue ${
+                location.pathname === "/upcomingfeautures" ? "active" : ""
+              }`}
+            >
+              <FaRocket className="iconsaif custom-rocket" size={20} />
+              <span className="spanHome">Upcoming Feautures</span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
